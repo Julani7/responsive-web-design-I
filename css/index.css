@@ -1,3 +1,456 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+	/* border:1px solid purple; */
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+header {
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	/* To make the logo go on top */
+	/* flex-direction: column-reverse; */
+	background:orange;
+	box-sizing:border-box;
+	padding:5px;
+	width:80%;
+	margin:0 auto;
+}
+
+nav {
+	display:inline-block;
+	width: 60%;
+	/* background:green; */
+}
+
+.logo {
+	width:30%;
+	/* margin:2.5px; */
+	text-align: right;
+	/* background:white; */
+}
+
+.services-header-img {
+	width:100%;
+}
+
+header nav ul li {
+	display:inline-block;
+	 margin-right:15px;
+	/* padding:4px; */
+} 
+
+section h1 {
+	padding-top:20px;
+}
+
+.Intro {
+	width:80%;
+	margin:0 auto;
+	box-sizing:border-box;
+}
+
+.Intro {
+	line-height: 1.5em;
+}
+
+h1 {
+	font-size:3em;
+}
+
+h2 {
+	font-size:2em;
+}
+
+.first {
+	width:80%;
+	display:flex;
+	/* justify-content: space-between; */
+	margin:0 auto;
+	padding-top:20px;
+	padding-bottom:35px;
+	/* background:gray; */
+	/* padding-bottom:0; */
+}
+
+.col.digital {
+	padding-right:2.5%;
+}
+
+.col.UX {
+	padding-left:2.5%;
+	padding-right:2.5%;
+}
+
+.col.marketing {
+	padding-left:2.5%;
+}
+
+.second {
+	width:80%;
+	display:flex;
+	margin:0 auto;
+	/* justify-content: space-between;
+	margin-top:0; */
+	/* background:green; */
+	padding-bottom:35px;
+}
+
+.col.Web {
+	padding-right:2.5%;
+}
+
+.col.iOS {
+	padding-left:2.5%;
+	padding-right:2.5%;
+}
+
+.col.Andriod {
+	padding-left:2.5%;
+}
+
+/* .col {
+	width:250px;
+	height:400px;
+	padding-bottom:0px;
+	margin:auto;
+} */
+
+.col.facts {
+	width:80%;
+	margin:0 auto;
+	line-height: 1.5em;
+	/* height:300px; */
+	padding-bottom:35px;;
+	/* background:lightgrey; */
+}
+
+.bottom-nav {
+	display:flex;
+	width:80%;
+	margin:0 auto;
+	/* box-sizing: border-box; */
+}
+
+.bottom-nav nav {
+	width:50%;
+}
+
+.bottom-nav nav ul li {
+	text-align:center;
+	padding:10px;
+}
+
+.bottom-nav .services-header-img {
+	width:50%;
+}
+
+footer {
+	margin:0 auto;
+	width:80%;
+	text-align:center;
+	background:white;
+	color:black;
+	padding:20px;
+}
+
+.hero-area {
+	width:80%;
+	display:flex;
+	margin:0 auto;
+	padding-top:20px;
+	padding-bottom:30px;
+}
+
+.hero-statement {
+	width:50%;
+	text-align: center;
+}
+
+.hero-statment h1{
+	font-size:2em;
+}
+
+.hero-image {
+	width:50%;
+}
+
+.section2 {
+	width:80%;
+	display:flex;
+	margin:0 auto;
+	padding-top:30px;
+	padding-bottom:20px;
+	border-top:1px solid black;
+}
+
+.section2 p {
+	line-height: 1.5em;
+}
+
+/* hr {
+	width:80%;
+	margin:0 auto;
+} */
+
+.features {
+	/* width: 50%; */
+	padding-right:2.5%;
+}
+
+.About {
+	/* width:50%; */
+	padding-left:2.5%;
+}
+
+.image-container {
+	width:80%;
+	margin:0 auto;
+}
+
+.middle-img {
+	width:100%;
+}
+
+.third-section {
+	width:80%;
+	margin:0 auto;
+	display:flex;
+	padding-top: 20px;
+	padding-bottom:30px;
+	border-bottom:1px solid black;
+}
+
+.Services {
+	padding-right:2.5%;
+}
+
+.Product {
+	padding-left:2.5%;
+	padding-right:2.5%;
+}
+
+.Vision {
+	padding-left:2.5%;
+}
+
+.Contact {
+	width:80%;
+	margin:0 auto;
+	padding-bottom:20px;
+}
+
+@media(max-width:500px){
+	header {
+		display:flex;
+		flex-direction:column-reverse;
+		/* padding:20px; */
+		background:white;
+		margin:0 auto;
+		width:100%;
+	}
+
+	.logo {
+		padding-top:20px;
+		padding-bottom:20px;
+	}
+
+	nav {
+		width:100%;
+	}
+
+	header nav ul li {
+		margin-right: 0;
+	}	
+	ul {
+		display:flex;
+		flex-direction:column;
+		text-align: center;
+	}
+
+	li {
+		padding:20px;
+		border-bottom:1px solid black;
+	}
+
+	li:first-child{
+		border-top:1px solid black;
+	}
+
+	.hero-statement {
+		margin:0 auto;
+		/* border-bottom:none; */
+	}
+
+	.hero-image{
+		display:none;
+	}
+
+	/* h1 {
+		border:none;
+	} */
+
+	.section2 {
+		width:90%;
+		display:flex;
+		flex-direction:column;
+		border-top:2px solid black;
+		font-size:16px;
+	}
+	
+	.section2 div{
+		padding-bottom:10px;
+		padding-top:10px;
+	}
+
+	.image-container {
+		width:90%;
+	}
+
+	.third-section{
+		width:90%;
+		display:flex;
+		flex-direction:column;
+		border-bottom:2px solid black;
+		padding-bottom:20px;
+	}
+
+	.third-section div{
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+
+	
+	footer {
+		background:white;
+		color:black;
+	}
+
+}
+
+@media(max-width:800px){
+	header{
+		flex-direction: column-reverse;
+		background:white;
+		width:100%;
+		text-align: center;
+	}
+
+	.logo{
+		padding-top:20px;
+	}
+
+	nav{
+		width:100%;
+		padding:40px 20px 20px 20px;
+	}
+
+	header nav ul{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header nav ul li a:active{
+		text-decoration: none;
+	}
+
+	.hero-statement {
+		text-align: center;
+		width:100%;
+	}
+
+	.hero-image{
+		display:none;
+	}
+
+	.section2 div{
+		/* padding-bottom:20px;
+		padding-top:20px; */
+		width:80%;
+	}
+
+	.third-section{
+		width:80%;
+		display:flex;
+		flex-direction:column;
+		border-bottom:1px solid black;
+		padding-bottom:20px;
+	}
+
+	.third-section div{
+		width:100%;
+		padding:20px 0;
+	}
+
+	footer {
+		background:white;
+		color:black;
+	}
+
+	a {
+		color:black;
+		text-decoration: none;
+	}
+}
