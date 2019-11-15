@@ -211,8 +211,8 @@ footer {
 	margin:0 auto;
 	width:80%;
 	text-align:center;
-	background:black;
-	color:white;
+	background:white;
+	color:black;
 	padding:20px;
 }
 
@@ -221,6 +221,7 @@ footer {
 	display:flex;
 	margin:0 auto;
 	padding-top:20px;
+	padding-bottom:30px;
 }
 
 .hero-statement {
@@ -240,18 +241,19 @@ footer {
 	width:80%;
 	display:flex;
 	margin:0 auto;
-	padding-top:20px;
+	padding-top:30px;
 	padding-bottom:20px;
+	border-top:1px solid black;
 }
 
 .section2 p {
 	line-height: 1.5em;
 }
 
-hr {
+/* hr {
 	width:80%;
 	margin:0 auto;
-}
+} */
 
 .features {
 	/* width: 50%; */
@@ -277,6 +279,8 @@ hr {
 	margin:0 auto;
 	display:flex;
 	padding-top: 20px;
+	padding-bottom:30px;
+	border-bottom:1px solid black;
 }
 
 .Services {
@@ -308,6 +312,11 @@ hr {
 		width:100%;
 	}
 
+	.logo {
+		padding-top:20px;
+		padding-bottom:20px;
+	}
+
 	nav {
 		width:100%;
 	}
@@ -326,19 +335,28 @@ hr {
 		border-bottom:1px solid black;
 	}
 
+	li:first-child{
+		border-top:1px solid black;
+	}
+
 	.hero-statement {
 		margin:0 auto;
+		/* border-bottom:none; */
 	}
 
 	.hero-image{
 		display:none;
 	}
 
+	/* h1 {
+		border:none;
+	} */
+
 	.section2 {
 		width:90%;
 		display:flex;
 		flex-direction:column;
-		border-top:3px solid black;
+		border-top:2px solid black;
 		font-size:16px;
 	}
 	
@@ -347,11 +365,15 @@ hr {
 		padding-top:10px;
 	}
 
+	.image-container {
+		width:90%;
+	}
+
 	.third-section{
 		width:90%;
 		display:flex;
 		flex-direction:column;
-		border-bottom:1px solid black;
+		border-bottom:2px solid black;
 		padding-bottom:20px;
 	}
 
@@ -360,9 +382,75 @@ hr {
 		padding-bottom:10px;
 	}
 
+	
 	footer {
 		background:white;
 		color:black;
 	}
 
+}
+
+@media(max-width:800px){
+	header{
+		flex-direction: column-reverse;
+		background:white;
+		width:100%;
+		text-align: center;
+	}
+
+	.logo{
+		padding-top:20px;
+	}
+
+	nav{
+		width:100%;
+		padding:40px 20px 20px 20px;
+	}
+
+	header nav ul{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header nav ul li a:active{
+		text-decoration: none;
+	}
+
+	.hero-statement {
+		text-align: center;
+		width:100%;
+	}
+
+	.hero-image{
+		display:none;
+	}
+
+	.section2 div{
+		/* padding-bottom:20px;
+		padding-top:20px; */
+		width:80%;
+	}
+
+	.third-section{
+		width:80%;
+		display:flex;
+		flex-direction:column;
+		border-bottom:1px solid black;
+		padding-bottom:20px;
+	}
+
+	.third-section div{
+		width:100%;
+		padding:20px 0;
+	}
+
+	footer {
+		background:white;
+		color:black;
+	}
+
+	a {
+		color:black;
+		text-decoration: none;
+	}
 }
